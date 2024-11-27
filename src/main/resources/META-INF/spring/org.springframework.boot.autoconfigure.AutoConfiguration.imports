@@ -1,0 +1,3 @@
+t1.demo.starter.config.DemoStarterConfig
+t1.demo.starter.config.KafkaAnnotationProducerConfig
+t1.demo.starter.config.DatabaseConfig

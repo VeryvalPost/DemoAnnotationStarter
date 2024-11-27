@@ -1,0 +1,60 @@
+{
+  "properties": [
+    {
+      "name": "spring.kafka.bootstrap-servers",
+      "type": "java.lang.String",
+      "description": "Kafka bootstrap servers",
+      "defaultValue": "192.168.3.155:9092",
+      "sourceType": "org.springframework.kafka.core.KafkaTemplate"
+    },
+    {
+      "name": "spring.kafka.topic.metrics",
+      "type": "java.lang.String",
+      "description": "Kafka topic for metrics",
+      "defaultValue": "t1_demo_metrics",
+      "sourceType": "com.example.kafka.KafkaMetricsProducer"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "description": "Username for the PostgreSQL DataSource connection",
+      "defaultValue": "postgres",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "description": "Password for the PostgreSQL DataSource connection",
+      "defaultValue": "123",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "description": "Driver class name for the PostgreSQL DataSource",
+      "defaultValue": "org.postgresql.Driver",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.initialization-mode",
+      "type": "java.lang.String",
+      "description": "Initialization mode for the PostgreSQL DataSource",
+      "defaultValue": "always",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.jpa.hibernate.ddl-auto",
+      "type": "java.lang.String",
+      "description": "JPA Hibernate DDL Auto mode",
+      "defaultValue": "validate",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties"
+    },
+    {
+      "name": "spring.jpa.show-sql",
+      "type": "java.lang.Boolean",
+      "description": "Whether to show SQL in the console",
+      "defaultValue": "true",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    }
+  ]
+}
